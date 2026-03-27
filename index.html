@@ -3,35 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Agency | Digital Marketing Expert</title>
+    <title>Digital Marketing Agency | Expert Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .nav-scrolled { background: white; shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 10px 0; }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
-    <nav class="flex justify-between items-center p-6 bg-white shadow-sm sticky top-0 z-50">
-        <div class="text-2xl font-bold text-blue-600">AGENCY LOGO</div>
-        <ul class="hidden md:flex space-x-8 font-medium">
-            <li><a href="#" class="hover:text-blue-600">Home</a></li>
-            <li><a href="#services" class="hover:text-blue-600">Services</a></li>
-            <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 px-6 md:px-16 flex justify-between items-center text-white">
+        <div class="text-2xl font-bold tracking-tighter flex items-center gap-2 text-blue-600">
+            <i data-lucide="zap" class="fill-current"></i> DIGITAL AGENCY
+        </div>
+        <ul class="hidden md:flex space-x-8 font-semibold uppercase text-sm tracking-wide">
+            <li><a href="#" class="hover:text-blue-500 transition">Home</a></li>
+            <li><a href="#services" class="hover:text-blue-500 transition">Services</a></li>
+            <li><a href="#about" class="hover:text-blue-500 transition">About Me</a></li>
+            <li><a href="#contact" class="hover:text-blue-500 transition">Contact</a></li>
         </ul>
-        <a href="https://wa.me/yournumber" class="bg-green-500 text-white px-5 py-2 rounded-full">WhatsApp Us</a>
+        <div class="hidden md:block">
+            <a href="tel:+123456789" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Call Now</a>
+        </div>
     </nav>
 
-    <section class="py-20 px-10 text-center bg-white">
-        <h1 class="text-5xl font-extrabold mb-4">Elevate Your Digital Presence</h1>
-        <p class="text-xl text-gray-600 mb-8">Expert SEO, SMM, and Web Development to grow your business globally.</p>
-        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold">Get a Free Audit</button>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white px-6 md:px-16">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full text-sm font-bold border border-blue-500/30 uppercase tracking-widest">Digital Marketing Expert</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight">Grow Your Business <span class="text-blue-500">10X Faster</span></h1>
+                <p class="mt-6 text-gray-300 text-lg md:text-xl leading-relaxed">I help businesses dominate their niche through SEO, high-converting Google Ads, and custom Web Development.</p>
+                
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center gap-2">
+                        View Services <i data-lucide="arrow-right"></i>
+                    </a>
+                    <div class="flex items-center gap-4 px-4">
+                        <div class="flex -space-x-3">
+                            <img src="https://i.pravatar.cc/40?img=1" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/40?img=2" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/40?img=3" class="w-10 h-10 rounded-full border-2 border-white">
+                        </div>
+                        <p class="text-sm font-medium text-gray-400">Trusted by 200+ Clients</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Form (Like Referral Site) -->
+            <div class="bg-white p-8 rounded-2xl shadow-2xl text-gray-900">
+                <h3 class="text-2xl font-bold mb-2">Get a Free Audit</h3>
+                <p class="text-gray-500 mb-6">Enter your details and I'll analyze your website for free.</p>
+                <form action="#" class="space-y-4">
+                    <input type="text" placeholder="Full Name" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-black transition">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <section id="services" class="py-20 bg-gray-100 px-10">
-        <h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition">
-                <div class="text-blue-500 mb-4 text-3xl">🚀</div>
-                <h3 class="text-xl font-bold mb-2">SEO Optimization</h3>
-                <p class="text-gray-600">Rank #1 on Google and drive organic traffic.</p>
-            </div>
-            </div>
+    <!-- Counter Section -->
+    <section class="py-12 bg-blue-600 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><h4 class="text-4xl font-bold">150+</h4><p class="opacity-80">Projects Done</p></div>
+            <div><h4 class="text-4xl font-bold">95%</h4><p class="opacity-80">Success Rate</p></div>
+            <div><h4 class="text-4xl font-bold">50+</h4><p class="opacity-80">Active Clients</p></div>
+            <div><h4 class="text-4xl font-bold">10+</h4><p class="opacity-80">Years Exp.</p></div>
+        </div>
     </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 md:px-16 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Core Services</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="p-10 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <i data-lucide="search"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">SEO Optimization</h3>
+                <p class="text-gray-600 leading-relaxed">Boost your organic rankings and drive high-quality traffic from Google search results.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="p-10 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Google Ads (PPC)</h3>
+                <p class="text-gray-600 leading-relaxed">Targeted ad campaigns that convert window shoppers into paying customers instantly.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="p-10 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mb-6 group-hover:bg-purple-600 group-hover:text-white transition">
+                    <i data-lucide="code"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                <p class="text-gray-600 leading-relaxed">Lightning-fast, mobile-responsive websites built to represent your brand perfectly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/YOUR_NUMBER" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-[100]">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled', 'shadow-md', 'text-gray-900');
+                nav.classList.remove('text-white', 'py-6');
+                nav.classList.add('py-4');
+            } else {
+                nav.classList.remove('nav-scrolled', 'shadow-md', 'text-gray-900');
+                nav.classList.add('text-white', 'py-6');
+                nav.classList.remove('py-4');
+            }
+        });
+    </script>
 </body>
 </html>
